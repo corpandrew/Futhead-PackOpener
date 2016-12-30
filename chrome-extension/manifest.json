@@ -1,13 +1,17 @@
 {
   "name": "FUTHEAD BOT",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "version": "1",
   "content_scripts": [
     {
       "matches": ["http://www.futhead.com/packs/open/fifa-17/"],
-      "js": ["futHeadBot.js"]
+      "js": ["futHeadBotFifa17Pack.js"]
+    },
+    {
+      "matches": ["http://www.futhead.com/packs/open/generations/"],
+      "js": ["futHeadBotGenerationsPack.js"]
     }
   ], "permissions": [
-    "tabs", "http://www.futhead.com/packs/open/fifa-17/"
+    "tabs", "http://www.futhead.com/packs/open/*"
   ]
 }
